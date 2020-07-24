@@ -23,11 +23,15 @@ module.exports = function(app) {
   
 app.get("/chat", (req, res) => {
   res.render("chat",{rooms: rooms})
-})
+});
 
-app.get("/:room", (res, req) =>{
+app.get("/register", function (req, res) {  
+  res.render("register")
+});
+
+/*app.get("/:room", (res, req) =>{
   res.render("room", {roomName: req.params.room})
-})
+})*/
 
 
   // Render 404 page for any unmatched routes

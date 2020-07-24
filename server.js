@@ -3,15 +3,13 @@ require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
 
-const server = require("http").Server(app);
-const io = require('socket.io')(server);
-
-
-
 var db = require("./models");
 
 var app = express();
 var PORT = process.env.PORT || 5000;
+//--- Real time chat -------
+const server = require("http").Server(app);
+const io = require('socket.io')(server);
 
 
 // Middleware
@@ -48,6 +46,18 @@ io.on('connection', socket => {
     delete users[socket.id]
   })
 })
+
+
+/* route to handle login and registration */
+var authenticateController=require('./controllers/authenticate-controller');
+var registerController=require('./controllers/register-controller');
+
+app.post('/api/register',registerController.register);
+app.post('/api/authenticate',authenticateController.authenticate);
+ 
+console.log(authenticateController);
+app.post('/controllers/register-controller', registerController.register);
+app.post('/controllers/authenticate-controller', authenticateController.authenticate);
 
 var syncOptions = { force: false };
 
