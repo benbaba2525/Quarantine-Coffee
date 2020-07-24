@@ -29,6 +29,10 @@ app.get("/register", function (req, res) {
   res.render("register")
 });
 
+app.get("/home", function (req, res) {  
+  res.render("home")
+});
+
 /*app.get("/:room", (res, req) =>{
   res.render("room", {roomName: req.params.room})
 })*/
