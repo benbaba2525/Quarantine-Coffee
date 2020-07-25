@@ -7,10 +7,10 @@ if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
   connection = mysql.createConnection({
-    host: "localhost", 
-    user: "root",
-    password: "ben12345",
-    database: "exampledb",
+    host: "ipobfcpvprjpmdo9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", 
+    user: "y233u7nb4clug2y4",
+    password: "r9orjv2b3zsslic5",
+    database: "sxxncweaxr5p18oo",
   });
 };
 // connect to database, throw error if error, otherwise log the connection id
