@@ -30,6 +30,7 @@ app.set("view engine", "handlebars");
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
+// Reat Time Chat
 server.listen(3300)
 const users = {}
 

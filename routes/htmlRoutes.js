@@ -37,9 +37,9 @@ app.get("/book", function (req, res) {
   res.render("book")
 });
 
-/*app.get("/:room", (res, req) =>{
-  res.render("room", {roomName: req.params.room})
-})*/
+app.get("/incorrect", function (req, res) {  
+  res.render("incorrect")
+});
 
 
   // Render 404 page for any unmatched routes
