@@ -31,7 +31,7 @@ require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 // Reat Time Chat
-server.listen(3300)
+
 const users = {}
 
 io.on('connection', socket => {
