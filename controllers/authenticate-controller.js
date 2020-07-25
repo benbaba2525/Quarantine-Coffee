@@ -20,7 +20,7 @@ module.exports.authenticate=function(req,res){
 
             if(password==decryptedString){
               // Adding page where you want to go after log in (Home)
-              res.redirect("/home") 
+              res.redirect("/chat") 
             }else{
               // Adding page to show incorrect password
               res.redirect("/incorrect") 

@@ -29,13 +29,18 @@ app.get("/register", function (req, res) {
   res.render("register")
 });
 
-app.get("/home", function (req, res) {  
-  res.render("home")
+app.get("/signin", function (req, res) {  
+  res.render("signin")
 });
 
-app.get("/book", function (req, res) {  
-  res.render("book")
+app.get("/books", function (req, res) {  
+  res.render("books")
 });
+
+app.get("/menu", function (req, res) {  
+  res.render("menu")
+});
+
 
 app.get("/incorrect", function (req, res) {  
   res.render("incorrect")

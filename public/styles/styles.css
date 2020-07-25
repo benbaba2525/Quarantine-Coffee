@@ -1,9 +1,4 @@
-body {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
+ 
 
 .index{
   background-size: cover;
@@ -13,6 +8,15 @@ body {
 .register{
   background-image: url("../img/registerBackground.jpeg" );
 }
+
+.chatBody{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
 
 .list-group-item {
   line-height: 2.5;
@@ -222,12 +226,6 @@ body {
     
 }
 
-#nameHello{
-  text-align: center;
-  color: blue;
-  margin: auto;
-  float: left;
-}
 /*Chat*/
 
 #sendChatDiv{
