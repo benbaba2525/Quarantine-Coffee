@@ -1,10 +1,13 @@
 const socket = io('http://localhost:3300')
+
 const messageContainer = document.getElementById('message-container')
 const messageForm = document.getElementById('send-container')
 const messageInput = document.getElementById('message-input')
 
+
 const name = prompt('What is your name?')
-appendMessage('You joined')
+document.write(`<h1 style="text-align:center; padding:20px;background-color:rgb(111, 224, 237);margin:15px;"> <i class="fa fa-comments-o" aria-hidden="true"></i>  <strong> ${name}</strong> </h1>`)
+appendMessage(`You joined!!`)
 socket.emit('new-user', name)
 
 socket.on('chat-message', data => {
@@ -32,3 +35,4 @@ function appendMessage(message) {
   messageElement.innerText = message
   messageContainer.append(messageElement)
 }
+

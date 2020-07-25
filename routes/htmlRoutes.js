@@ -33,6 +33,10 @@ app.get("/home", function (req, res) {
   res.render("home")
 });
 
+app.get("/book", function (req, res) {  
+  res.render("book")
+});
+
 /*app.get("/:room", (res, req) =>{
   res.render("room", {roomName: req.params.room})
 })*/
