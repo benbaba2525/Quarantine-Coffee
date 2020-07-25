@@ -5,6 +5,14 @@ body {
   justify-content: center;
 }
 
+.index{
+  background-size: cover;
+  background-image: url("../img/signinBackground.jpeg");
+}
+
+.register{
+  background-image: url("../img/registerBackground.jpeg" );
+}
 
 .list-group-item {
   line-height: 2.5;

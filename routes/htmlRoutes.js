@@ -41,6 +41,10 @@ app.get("/incorrect", function (req, res) {
   res.render("incorrect")
 });
 
+app.get("/emailNotExist", function (req, res) {  
+  res.render("emailNotExist")
+});
+
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
