@@ -190,7 +190,10 @@
 .text{
     height: 100%;
  }
- 
+ .musicDiv{
+     text-align: center;
+     background-color: rgba(126, 62, 26, 0.529);
+ }
  
  .list-group-item {
    line-height: 2.5;
