@@ -7,7 +7,7 @@ const messageInput = document.getElementById('message-input')
 
 const name = prompt('What is your name?')
 document.write(`<div class="text"><h1 style="text-align:center; padding:20px;background-color:rgb(111, 224, 237);margin:15px;height:100%;"> <i class="fa fa-comments-o" aria-hidden="true"></i>  <strong> ${name}</strong> </h1></div>`)
-appendMessage(`<h5><strong>You joined!!</strong></h5>`)
+appendMessage(`<h5 style="color:blue;"><strong>You joined!!</strong></h5>`)
 socket.emit('new-user', name)
 
 
@@ -27,7 +27,7 @@ socket.on('user-disconnected', name => {
 messageForm.addEventListener('submit', e => {
   e.preventDefault()
   const message = messageInput.value
-  appendMessage(`<h5><strong>You: ${message}</strong></h5>`)
+  appendMessage(`<h5 style="color:blue;"><strong>You: ${message}</strong></h5>`)
   socket.emit('send-chat-message', message)
   messageInput.value = ''
 })

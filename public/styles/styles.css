@@ -201,34 +201,57 @@
    max-width: 1200px;
   
  }
- .container{
-   margin-top: 10px;
- }
+ 
  
  .messageBox{
-     height:300px;
+     height:350px;
      overflow: auto;
-     border: solid 1px #6fbced transparent;
-    
+     
  }
  
- #message-container div {
+ #message-container div  {
    /*padding: 5px;
    margin: 5px;
    background-color: rgba(194, 190, 190, 0.769);
-   margin: 5px;*/
-   background-color: rgba(235, 24, 24, 0.769);
-   width:100%;
-
+   margin: 5px;
+   background-color: rgba(24, 235, 182, 0.769);
+   width:100%;*/
+   background: #fff;
+    box-shadow: 9px 9px 30px 0px rgba(1, 50, 101, 0.21);
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+    padding: 20px 15px;
+    display: block;
+    position: relative;
+    overflow: hidden; 
+    text-decoration: none;
+      
  }
  
- #message-container div:nth-child(2n) {
+ /*#message-container div:nth-child(2n) {
    width:100%;
    margin: 15px;
    margin-left: 55px;
    background-color:  #6fbced ;
 
- }
+background: #f0f2f4;
+       height:100%;
+        padding: 20px 15px;
+        padding-right: 50px;
+        font-size: 16px;
+        color: #535357;
+        border-radius: 7px;
+        max-width: 90%;
+        margin-top: 10px;
+        text-align: left;
+        position: relative;
+        margin-bottom: 20px;
+
+
+
+ }*/
  
  #send-container {
    padding-bottom: 30px;
@@ -241,7 +264,7 @@
  
  #message-input {
    flex-grow: 1;
-   overflow: auto;
+
  }
  
  
