@@ -1,13 +1,92 @@
-<div id="menu">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
-       <h1>Menu</h1>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+<div class="container">
 
+    <div class="jumbotron">
+        <h1>Quarantine Coffee</h1>
+        <p>Quarantine Coffee Cafe</p>
+        <br>
+        <h2>Customize your Latte</h2>
+        <panel>
+            <form class="create-form">
+                <div class="form-group">
+                    <label for="newLatte">Latte Options</label>
+                    {{!-- <input type="text" id="newLatte" name="latte"> --}}
+                    <select data-placeholder="" id="newLatte" name="latte">
+                        <option value="Nothing Selected" selected>Please Select a Latte Option</option>
+                        <option value="Blonde Caffè Latte">Blonde Caffe</option>
+                        <option value="Caffè Latte">Caffe</option>
+                        <option value="Chai Tea Latte">Chai Tea</option>
+                        <option value="Cinnamon Dolce Latte">Cinnamon Dolce</option>
+                        <option value="Coconutmilk Cascara Latte">Coconut milk Cascara</option>
+                        <option value="Latte">Latte</option>
+                        <option value="London Fog Tea Latte">London Fog Tea</option>
+                        <option value="Matcha Green Tea Latte">Matcha Green Tea</option>
+                        <option value="Matcha Latte">Matcha</option>
+                        <option value="Royal English Breakfast Tea Latte">Royal English Breakfast Tea</option>
+                    </select>
+
+                    <button type="submit" class="btn btn-success" id="addLatte">
+                        <span class="fa fa-thumbs-up"></span>
+                    </button>
+                </div>
+            </form>
+        </panel>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="leftside"><strong>Choose a Latte</strong>
+                    <p>Latte is Ready!</p>
+                </div>
+                <div class="panel-body">
+
+                    <ul>
+                        {{#each lattes}}
+                        {{#unless drank}}
+
+                        <span><strong> {{this.id}} - {{this.drink_name}}</strong></span>
+                        <button type="button" class="drinkLatte btn btn-warning" id="drinkButton" data-id="{{this.id}}"
+                            data-newDrank="{{drank}}"><span class="fa fa-usd"></span></button>
+                        <hr>
+                        {{/unless}}
+                        {{/each}}
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="rightside"><strong>Latte is Ready!</strong>
+                    <p>Please take your Latte</p>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        {{#each lattes}}
+                        {{#if drank}}
+                        <span><strong> {{this.id}} - {{this.drink_name}}</strong></span>
+                        <button type="button" class="trashLatte btn btn-danger" id="trashbutton" data-id="{{this.id}}"
+                            data-newDrank="{{drank}}"><span class="fa fa-trash"></span></button>
+                        <hr>
+                        {{/if}}
+                        {{/each}}
+                    </ul>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--endrow -->
+</div>
+<!-- Bootstap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap" rel="stylesheet">
+
+
+<!-- JS -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
+<script src="/js/drinks.js"></script>
