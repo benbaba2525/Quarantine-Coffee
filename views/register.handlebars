@@ -1,5 +1,25 @@
 <body class="register">
- <div id="logreg-forms" style="text-align: center; background-color:rgba(255, 255, 255, 0.913)">
+  <nav>
+      <ul class="nav-flex-row">
+        <li class="nav-item">
+          <a href="/">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="/menu">Coffee Menu</a>
+        </li>
+        <li class="nav-item">
+          <a href="/books">Read Books</a>
+        </li>
+        <li class="nav-item">
+          <a href="/signin">Live Chat & Music</a>
+        </li>
+      </ul>
+    </nav>
+   <br>
+  <div class="coffeePic">
+  <img src="/img/coffee1.png">
+  </div>
+ <div id="logreg-forms" style="text-align: center; background-color:rgba(255, 255, 255, 0.913);">
         <form class="form-signin" action="/controllers/register-controller" method="POST">
             <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Create an Account</h1>
 
@@ -22,7 +42,7 @@
             <hr>
             <!-- <p>Don't have an account!</p>  -->
            
-              <a class="btn btn-primary btn-lg"  href="/" role="button"><i class="fa fa-arrow-circle-o-left" aria-hidden="true" style="font-size:20px;"></i>  Go Back To Sign Page</a>
+              <a class="btn btn-primary btn-lg"  href="/signin" role="button"><i class="fa fa-arrow-circle-o-left" aria-hidden="true" style="font-size:20px;"></i>  Go Back To Sign In</a>
       
             </form>
             
