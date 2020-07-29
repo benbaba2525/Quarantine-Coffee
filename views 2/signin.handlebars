@@ -1,0 +1,53 @@
+
+<body class="signin">
+  <nav>
+      <ul class="nav-flex-row">
+        <li class="nav-item">
+          <a href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="/menu">Coffee Menu</a>
+        </li>
+        <li class="nav-item">
+          <a href="/books">Read Books</a>
+        </li>
+        <li class="nav-item">
+          <a href="/chat">Live Chat & Music</a>
+        </li>
+      </ul>
+    </nav>
+ <br>
+<div class="coffeePic">
+  <img src="/img/coffee1.png">
+  </div>
+   <div id="logreg-forms" style="text-align: center;background-color:rgba(255, 255, 255, 0.947);margin-top:50px;">
+        <form class="form-signin" action="/controllers/authenticate-controller" method="POST">
+            <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
+            <div class="input-group">
+              <input type="email" name="email" class="form-control" placeholder="Email address" required="" autofocus="">
+            </div>
+           <br>
+            <div class="input-group">
+              <input type="password" name="password" class="form-control" placeholder="Password" required="">
+            </div>
+           <br>
+            <div class="input-group">
+              <button class="btn btn-md btn-rounded btn-block form-control submit" type="submit"><i class="fas fa-sign-in-alt"></i> Sign in</button>
+            </div>
+
+            <hr>
+            <!-- <p>Don't have an account!</p>  -->
+           
+              <a class="btn btn-primary btn-lg"  href="/register" role="button"><i class="fas fa-user-plus"></i> Sign up New Account</a>
+      
+            </form>
+            <br>
+
+</div>
+
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>

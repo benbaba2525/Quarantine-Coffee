@@ -1,4 +1,4 @@
-var socket = io('http://localhost:3300')
+var socket = io('https://quarantine-coffee.herokuapp.com/chat:3300')
 
 
 const messageContainer = document.getElementById('message-container')
