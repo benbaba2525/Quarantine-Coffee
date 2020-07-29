@@ -6,7 +6,7 @@ var exphbs = require("express-handlebars");
 
 
 var app = express();
-var PORT = process.env.PORT || 5000 ;
+var PORT = process.env.PORT || 5000 || 3300 ;
 
 
 
@@ -31,7 +31,7 @@ require("./routes/htmlRoutes")(app);
 // Reat Time Chat
 const server = require("http").Server(app);
 const io = require('socket.io')(server);
-server.listen(process.env.PORT || 3300);
+server.listen(3300);
 //--- Real time chat -------
 
 const users = {}
