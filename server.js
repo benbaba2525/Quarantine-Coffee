@@ -34,8 +34,6 @@ const io = require('socket.io')(server);
 server.listen(3300)
 //--- Real time chat -------
 
-var socket = require('socket.io-client')('http://localhost:3300');
-
 const users = {}
 
 
