@@ -1,5 +1,4 @@
-const socket = io('http://localhost:9090')
-
+const socket = io('https://quarantine-coffee.herokuapp.com/chat:9090')
 
 const messageContainer = document.getElementById('message-container')
 const messageForm = document.getElementById('send-container')
