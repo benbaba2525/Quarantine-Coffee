@@ -1,5 +1,13 @@
-var socket = io('http://localhost:3300');
+var socket = io('http://quarantine-coffee.herokuapp.com/:3300');
+/*const socket = io({
+  transports: ['websocket']
+});
 
+// on reconnection, reset the transports option, as the Websocket
+// connection may have failed (caused by proxy, firewall, browser, ...)
+socket.on('reconnect_attempt', () => {
+  socket.io.opts.transports = ['polling', 'websocket'];
+});*/
 
 const messageContainer = document.getElementById('message-container')
 const messageForm = document.getElementById('send-container')
