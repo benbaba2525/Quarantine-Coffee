@@ -17,11 +17,11 @@ socket.on('chat-message', data => {
 })
 
 socket.on('user-connected', name => {
-  appendMessage(`<h5><strong> ${name} connected </strong></h5>`)
+  appendMessage(`<h5><strong> ${name} : connected </strong></h5>`)
 })
 
 socket.on('user-disconnected', name => {
-  appendMessage(`<h5><strong> ${name} disconnected</strong></h5>`)
+  appendMessage(`<h5><strong> ${name} : disconnected</strong></h5>`)
 })
 
 messageForm.addEventListener('submit', e => {
