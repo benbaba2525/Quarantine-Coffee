@@ -31,7 +31,7 @@ require("./routes/htmlRoutes")(app);
 // Reat Time Chat
 const server = require("http").Server(app);
 const io = require('socket.io')(server);
-
+server.listen(3000);
 //--- Real time chat -------
 
 const users = {}

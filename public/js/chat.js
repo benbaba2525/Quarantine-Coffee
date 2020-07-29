@@ -1,4 +1,4 @@
-var socket = io('localhost:5000');
+var socket = io('localhost:3000');
 /*const socket = io({
   transports: ['websocket']
 });
