@@ -1,13 +1,4 @@
-var socket = io('localhost:3000');
-/*const socket = io({
-  transports: ['websocket']
-});
-
-// on reconnection, reset the transports option, as the Websocket
-// connection may have failed (caused by proxy, firewall, browser, ...)
-socket.on('reconnect_attempt', () => {
-  socket.io.opts.transports = ['polling', 'websocket'];
-});*/
+var socket = io('localhost:5000');
 
 const messageContainer = document.getElementById('message-container')
 const messageForm = document.getElementById('send-container')
