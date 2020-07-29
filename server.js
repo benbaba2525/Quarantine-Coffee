@@ -6,7 +6,7 @@ var exphbs = require("express-handlebars");
 
 
 var app = express();
-var PORT = process.env.PORT || 9000 || 9090;
+var PORT = process.env.PORT || 9000 || 9090 ;
 //--- Real time chat -------
 const server = require("http").Server(app);
 const io = require('socket.io')(server);
