@@ -1,4 +1,4 @@
-var socket = io('http://quarantine-coffee.herokuapp.com/:3300');
+var socket = io('localhost:5000');
 /*const socket = io({
   transports: ['websocket']
 });
