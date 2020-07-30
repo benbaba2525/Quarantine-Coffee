@@ -19,6 +19,14 @@
       </ul>
     </nav>
 
+
+
+
+
+
+
+
+
 <div class="container ">
     <div class="jumbotron coffeeMenu" style="background-color: rgba(133, 84, 36, 0.632);">
         <h1>Quarantine Coffee</h1>
@@ -26,11 +34,13 @@
         <br>
         <h2>Customize your Latte</h2>
         <panel>
+          
             <form class="create-form">
                 <div class="form-group">
                     <label for="newLatte">Choose your Latte Option</label>
                     {{!-- <input type="text" id="newLatte" name="latte"> --}}
-                    <select data-placeholder="" id="newLatte" name="latte">
+                    
+                    <select data-placeholder="" id="newLatte" name="latte" onchange="myFunction(this.value)">
                         <option value="Nothing Selected" disabled selected></option>
                         <option value="Blonde Caffè Latte">Blonde Caffe</option>
                         <option value="Caffè Latte">Caffe</option>
@@ -43,7 +53,6 @@
                         <option value="Matcha Latte">Matcha</option>
                         <option value="Royal English Breakfast Tea Latte">Royal English Breakfast Tea</option>
                     </select>
-
                     <button type="submit" class="btn btn-success" id="addLatte">
                         <span class="fa fa-shopping-basket"></span>
                     </button>
@@ -51,6 +60,13 @@
             </form>
         </panel>
     </div>
+
+
+<img id="img">
+
+<div class="picCoffee"></div>
+
+    <!--  -->
     <div class="row">
         <div class="col-sm-6">
             <div class="panel panel-default">
@@ -122,6 +138,13 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+
+
+
+
+
+
+
 </body>
 <!-- Bootstap CSS -->
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

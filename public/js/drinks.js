@@ -1,3 +1,20 @@
+function myFunction(itm){
+    if (itm == "Blonde Caffè Latte"){
+      $('.picCoffee').html(`<img src="/img/coffee4.jpeg" >
+      <img src="/img/coffee4.jpeg" >`);
+    } else  if (itm == "Caffe Latte"){
+     $('.picCoffee').html(`<img src="/img/coffee2.jpeg" >`);
+    } else  if (itm == "Chai Tea Latte"){
+        $('.picCoffee').html(`<img src="/img/coffee3.jpeg" >`);
+    } else  if (itm == "Cinnamon Dolce Latte"){
+        $('.picCoffee').html(`<img src="/img/coffee1.png" >`);
+    } else  if (itm == "Coconutmilk Cascara Latte"){
+        $('.picCoffee').html(`<img src="/img/coffee4.jpeg" >`);
+    } else {
+        $('.picCoffee').html(`<img src="/img/coffee4.jpeg" >`);
+    }
+   };
+
 $(function() {
 
     $(".create-form").on("submit", function(event) {
