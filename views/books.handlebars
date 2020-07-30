@@ -1,22 +1,7 @@
-<style type="text/css" media="screen">
-            .gr_grid_container {
-              /* customize grid container div here. eg: width: 500px; */
-              width: 340px;
-              height: 330px;
-              overflow: auto;
-            }
-    
-            .gr_grid_book_container {
-              /* customize book cover container div here */
-              float: left;
-              width: 98px;
-              height: 160px;
-              padding: 2px 2px;
-              overflow: hidden;
-            }
-          </style>
+<body>
 
- <nav>
+    <!--nav-->
+    <nav>
       <ul class="nav-flex-row">
         <li class="nav-item">
           <a href="/">Home</a>
@@ -34,9 +19,58 @@
           <a href="/chat">Live Chat & Music</a>
         </li>
       </ul>
+    
     </nav>
-      
-        
+
+    <!--CSS file -->
+        <style type="text/css" media="screen">
+             @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100&display=swap');
+
+             .jumbotron {
+              background-color: rgb(216, 192, 146) !important;
+              margin-bottom: 0 !important;
+             }
+
+             .gr_grid_book_container {
+              /* customize book cover container div here */
+              float: left;
+              width: 200px;
+              height: 200px;
+              padding: 20px 30px;
+              overflow: hidden;       
+             }
+
+              .gr_grid_container {
+                height: 820px;
+                background: url(img/bookshelf.png);
+              }
+
+              h1 {
+                font-family: 'Big Shoulders Text', cursive;
+                text-align: center;
+                padding: 50px;
+                text-transform: uppercase;
+              }
+
+              p {
+                text-align: center;
+                font-family: 'Big Shoulders Text', cursive;
+                font-size: 1.5em;
+              }
+          </style>
+
+
+
+<div class="jumbotron">
+  <h1 class="display-4">Our bookshelf</h1>
+  <p class="lead">Looking for a good book? Here are the best books our Quarantine Coffee staffs recommend you have on our shelf. </p>
+  <hr class="my-4">
+  <p>Sign in to Goodreads. continue read your eBooks! </p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="https://www.goodreads.com/user/sign_in" role="button">Learn more</a>
+  </p>
+</div>
+
   <div class="gr_grid_container">
     <div class="gr_grid_book_container"><a title="1Q84" rel="nofollow" href="https://www.goodreads.com/book/show/10357575-1q84"><img alt="1Q84" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1483103331l/10357575._SX98_.jpg" /></a></div>
     <div class="gr_grid_book_container"><a title="The Adventures of Sherlock Holmes" rel="nofollow" href="https://www.goodreads.com/book/show/3590.The_Adventures_of_Sherlock_Holmes"><img alt="The Adventures of Sherlock Holmes" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1164045516l/3590._SX98_.jpg" /></a></div>
@@ -58,9 +92,12 @@
     <div class="gr_grid_book_container"><a title="Outliers: The Story of Success" rel="nofollow" href="https://www.goodreads.com/book/show/3228917-outliers"><img alt="Outliers: The Story of Success" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1344266315l/3228917._SX98_.jpg" /></a></div>
     <div class="gr_grid_book_container"><a title="Shantaram" rel="nofollow" href="https://www.goodreads.com/book/show/33600.Shantaram"><img alt="Shantaram" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1333482282l/33600._SX98_.jpg" /></a></div>
     <div class="gr_grid_book_container"><a title="Snow Crash" rel="nofollow" href="https://www.goodreads.com/book/show/830.Snow_Crash"><img alt="Snow Crash" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1477624625l/830._SX98_.jpg" /></a></div>
-  <noscript><br/>Share <a rel="nofollow" href="/">book reviews</a> and ratings with Allegra, and even join a <a rel="nofollow" href="/group">book club</a> on Goodreads.</noscript>
   </div>
 
-      </div>
 
-      <script src="https://www.goodreads.com/review/grid_widget/82662367.Quarantine%20Coffee%20-%20Employee%20Recommendations?cover_size=medium&hide_link=true&hide_title=&num_books=22&order=a&shelf=quarantine-coffee&sort=title&widget_id=1595557119" type="text/javascript" charset="utf-8"></script>
+      <!-- Bootstap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap" rel="stylesheet">
+    </body>
