@@ -1,9 +1,11 @@
 function myFunction(itm){
     if (itm == "Blonde Caffè Latte"){
       $('.picCoffee').html(`<h2>Blonde Caffè Latte</h2><br><img src="/img/coffee4.jpeg" style="width:300px; height:300px;" >`);
-    } else  if (itm == "Caffè Latte"){
+    } else  if (itm == "Caffe Americano"){
+        $('.picCoffee').html(`<img src="/coffee/americano.jpeg" >`);
+    }else  if (itm == "Caffè Latte"){
         $('.picCoffee').html(`<img src="/coffee/caffee-latte.jpeg" >`);
-    } else  if (itm == "Chai Tea Latte"){
+    }  else  if (itm == "Chai Tea Latte"){
         $('.picCoffee').html(`<h2>Chai Tea Latte</h2><br><img src="/coffee/chai tea latte.jpeg" >`);
     } else  if (itm == "Cinnamon Dolce Latte"){
         $('.picCoffee').html(`<h2>Cinnamon Dolce Latte</h2><br><img src="/coffee/cinnamon dolce.jpeg" >`);

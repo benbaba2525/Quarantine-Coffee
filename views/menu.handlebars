@@ -26,16 +26,17 @@
   <img src="/img/coffee1.png">
   </div>
         <br>
-        <h2 style="text-align: center; padding: 5px;">Customize your Beverage</h2>
+        <h2 style="text-align: center; padding: 5px;">Choose your drinks option</h2>
         <panel>
           
             <form class="create-form" style="text-align: center;">
                 <div class="form-group" style="font-size: 20px;">
-                    <label for="newLatte" style="text-align: center;">Choose your Latte Option</label>
+                    <label for="newLatte" style="text-align: center;">Choose your Drink Option</label>
                     {{!-- <input type="text" id="newLatte" name="latte"> --}}
                     
                     <select data-placeholder="" id="newLatte" name="latte" onchange="myFunction(this.value)">
                         <option value="Nothing Selected" disabled selected></option>
+                        <option value="Caffe Americano">Caffe Americano</option>
                         <option value="Blonde Caffè Latte">Blonde Caffe</option>
                         <option value="Caffè Latte">Caffe</option>
                         <option value="Chai Tea Latte">Chai Tea</option>
@@ -90,8 +91,8 @@
         </div>
         <div class="col-sm-6">
             <div class="panel panel-default">
-                <div class="panel-heading" id="rightside"><strong>Latte is Ready!</strong>
-                    <p>Please take your Latte</p>
+                <div class="panel-heading" id="rightside"><strong>Drink is Ready!</strong>
+                    <p>Please take your Drink!</p>
                 </div>
                 <div class="panel-body">
                     <ul>
