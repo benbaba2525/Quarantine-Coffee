@@ -1,16 +1,21 @@
 function myFunction(itm){
     if (itm == "Blonde Caffè Latte"){
-      $('.picCoffee').html(`<img src="/img/coffee4.jpeg" >
-      <img src="/img/coffee4.jpeg" >`);
-    } else  if (itm == "Caffe Latte"){
-     $('.picCoffee').html(`<img src="/img/coffee2.jpeg" >`);
+      $('.picCoffee').html(`<h2>Blonde Caffè Latte</h2><br><img src="/img/coffee4.jpeg" style="width:300px; height:300px;" >`);
+    } else  if (itm == "Caffè Latte"){
+        $('.picCoffee').html(`<img src="/coffee/caffee-latte.jpeg" >`);
     } else  if (itm == "Chai Tea Latte"){
-        $('.picCoffee').html(`<img src="/img/coffee3.jpeg" >`);
+        $('.picCoffee').html(`<h2>Chai Tea Latte</h2><br><img src="/coffee/chai tea latte.jpeg" >`);
     } else  if (itm == "Cinnamon Dolce Latte"){
-        $('.picCoffee').html(`<img src="/img/coffee1.png" >`);
+        $('.picCoffee').html(`<h2>Cinnamon Dolce Latte</h2><br><img src="/coffee/cinnamon dolce.jpeg" >`);
     } else  if (itm == "Coconutmilk Cascara Latte"){
-        $('.picCoffee').html(`<img src="/img/coffee4.jpeg" >`);
-    } else {
+        $('.picCoffee').html(`<h2>Coconutmilk Cascara Latte</h2><br><img src="/coffee/coconut-cascara-latte.jpeg" >`);
+    } else  if (itm == "London Fog Tea Latte"){
+        $('.picCoffee').html(`<h2>London Fog Tea Latte</h2><br><img src="/coffee/london fog tea latte.jpeg" >`);
+    }else  if (itm == "Matcha Green Tea Latte"){
+        $('.picCoffee').html(`<h2>Matcha Green Tea Latte</h2><br><img src="/coffee/matcha green tea latte.jpg" >`);
+    }else  if (itm == "Royal English Breakfast Tea Latte"){
+        $('.picCoffee').html(`<h2>Royal English Breakfast Tea Latte</h2><br><img src="/coffee/royalTeaLatte.jpeg" >`);
+    }else {
         $('.picCoffee').html(`<img src="/img/coffee4.jpeg" >`);
     }
    };
