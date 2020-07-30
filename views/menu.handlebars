@@ -19,25 +19,21 @@
       </ul>
     </nav>
 
-
-
-
-
-
-
-
-
 <div class="container ">
     <div class="jumbotron coffeeMenu" style="background-color: rgba(133, 84, 36, 0.632);">
-        <h1>Quarantine Coffee</h1>
-        <p>Quarantine Coffee Cafe</p>
+        <h1 style="text-align: center;">Quarantine Coffee</h1>
+        <p style="text-align: center;">Quarantine Coffee Cafe</p>
+
+  <div class="coffeePic">
+  <img src="/img/coffee1.png">
+  </div>
         <br>
-        <h2>Customize your Beverage</h2>
+        <h2 style="text-align: center; padding: 5px;">Customize your Beverage</h2>
         <panel>
           
-            <form class="create-form">
-                <div class="form-group">
-                    <label for="newLatte">Choose your Latte Option</label>
+            <form class="create-form" style="text-align: center;">
+                <div class="form-group" style="font-size: 20px;">
+                    <label for="newLatte" style="text-align: center;">Choose your Latte Option</label>
                     {{!-- <input type="text" id="newLatte" name="latte"> --}}
                     
                     <select data-placeholder="" id="newLatte" name="latte" onchange="myFunction(this.value)">
@@ -50,19 +46,21 @@
                         <option value="London Fog Tea Latte">London Fog Tea</option>
                         <option value="Matcha Green Tea Latte">Matcha Green Tea</option>
                         <option value="Royal English Breakfast Tea Latte">Royal English Breakfast Tea</option>
+                        <option value="Almond Mocha Latte">Almond Mocha Latte</option>
                     </select>
-                    <button type="submit" class="btn btn-success" id="addLatte">
-                        <span class="fa fa-shopping-basket"></span>
-                    </button>
                 </div>
+                <div class="addCoffee" style="text-align: center;">
+                <button type="submit" class="btn btn-success" id="addLatte" style="text-align: center; font-size:30px;">
+                        <span class="fa fa-shopping-basket"></span>
+                 </button>
+<div class="picCoffee"></div>
+
             </form>
         </panel>
     </div>
 
 
-<img id="img">
-
-<div class="picCoffee"></div>
+</div>
 
     <!--  -->
     <div class="row">

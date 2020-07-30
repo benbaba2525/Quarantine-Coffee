@@ -15,9 +15,12 @@ function myFunction(itm){
         $('.picCoffee').html(`<h2>Matcha Green Tea Latte</h2><br><img src="/coffee/matcha green tea latte.jpg" >`);
     }else  if (itm == "Royal English Breakfast Tea Latte"){
         $('.picCoffee').html(`<h2>Royal English Breakfast Tea Latte</h2><br><img src="/coffee/royalTeaLatte.jpeg" >`);
+    }else  if (itm == "Almond Mocha Latte"){
+        $('.picCoffee').html(`<h2>Almond Mocha Latte</h2><br><img src="/coffee/almond-mocha-latte.jpg" >`);
     }else {
         $('.picCoffee').html(`<img src="/img/coffee4.jpeg" >`);
     }
+    
    };
 
 $(function() {
