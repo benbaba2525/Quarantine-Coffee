@@ -17,6 +17,14 @@ function myFunction(itm){
         $('.picCoffee').html(`<h2>Royal English Breakfast Tea Latte</h2><br><img src="/coffee/royalTeaLatte.jpeg" >`);
     }else  if (itm == "Almond Mocha Latte"){
         $('.picCoffee').html(`<h2>Almond Mocha Latte</h2><br><img src="/coffee/almond-mocha-latte.jpg" >`);
+    }else  if (itm == "Kreme De Kona Latte"){
+        $('.picCoffee').html(`<h2>Kreme De Kona Latte</h2><br><img src="/coffee/Kreme De Kona Latte.jpeg" >`);
+    }else  if (itm == "Nutty Irishman Latte"){
+        $('.picCoffee').html(`<h2>Nutty Irishman Latte</h2><br><img src="/coffee/nutty-irishman-latte.png" >`);
+    }else  if (itm == "Caramel Vanilla Latte"){
+        $('.picCoffee').html(`<h2>Caramel Vanilla Latte</h2><br><img src="/coffee/Caramel-Latte.jpg" >`);
+    }else  if (itm == "Snickers Latte"){
+        $('.picCoffee').html(`<h2>Snickers Latte</h2><br><img src="/coffee/snickers-latte.jpeg" >`);
     }else {
         $('.picCoffee').html(`<img src="/img/coffee4.jpeg" >`);
     }
