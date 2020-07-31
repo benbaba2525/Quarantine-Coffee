@@ -4,7 +4,10 @@
   <nav>
       <ul class="nav-flex-row">
         <li class="nav-item">
-          <a href="/">About Us</a>
+          <a href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about">About Us</a>
         </li>
         <li class="nav-item">
           <a href="/menu">Coffee Menu</a>
@@ -13,7 +16,7 @@
           <a href="/books">Read Books</a>
         </li>
         <li class="nav-item">
-          <a href="/signin">Live Chat & Music</a>
+          <a href="/chat">Live Chat & Music</a>
         </li>
       </ul>
     </nav>
@@ -21,7 +24,7 @@
 
  <div class="musicDiv col-lg-12 col-md-12  mt-5">
   <h1><strong>Welcome to Live Chat & Music !!</strong></h1>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/fEvM-OUbaKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/fEvM-OUbaKs/?&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
 </div>
 
 <div class="row">
@@ -31,23 +34,18 @@
 
 <div class="sendBox col-lg-9 col-md-9  mt-4  ml-auto">
 <form id="send-container">
-    <textarea class="form-control" type="text" id="message-input" placeholder="Type your message...."></textarea>
- <button type="submit" class="btn btn-primary" id="send-button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Send</button>
+  <input class="form-control form-control-lg" type="text" id="message-input" placeholder="Type your message....">
+ <button type="submit" class="btn btn-primary btn-md mt-0" id="send-button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Send</button>
 </div>
 </div>
  </form>
 </div>
 </div>
 <!-- -->
-<!-- Socket.io -->
-  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
-  <!-- Socket.io - client-->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
-  <script  src="/js/chat.js"></script>
-
 
 
 </body>
-
-  
- 
+<!-- Socket.io -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+  <script src="http://localhost:3300/socket.io/socket.io.js"></script>
+  <script  src="/js/chat.js"></script>

@@ -22,6 +22,10 @@ app.get("/chat", (req, res) => {
 app.get("/register", function (req, res) {  
   res.render("register")
 });
+// Load successful register page
+app.get("/successRegister", function (req, res) {  
+  res.render("successRegister")
+});
 //Load signin page
 app.get("/signin", function (req, res) {  
   res.render("signin")

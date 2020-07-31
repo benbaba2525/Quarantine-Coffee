@@ -91,6 +91,41 @@ li {
     
 }
 
+/* Coffee Menu */
+.coffeeBody{
+    background-color: rgba(218, 144, 70, 0.37);
+}
+.coffeeMenu {
+    background-repeat: no-repeat;
+    background-position: right;
+    color: #ffffff;
+    margin-top: 130px;
+  }
+  #newburger {
+    color: #5c5c5c;
+  }
+
+.picCoffee{
+    text-align: center;
+    padding: 40px;
+    
+}
+
+  #leftside {
+    background-color: #5c5c5c;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+  }
+  #rightside {
+    background-color: #43aa2f;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+
+
 /* Sing In & Register*/
 
 .register{
