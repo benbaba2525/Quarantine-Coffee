@@ -2,9 +2,14 @@
 require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
+
+
+
 var app = express();
-var PORT = 5000;
+var PORT = process.env.PORT || 5000;
 //--- Real time chat -------
+const server = require("http").Server(app);
+const io = require('socket.io')(server);
 
 
 // Middleware
@@ -26,17 +31,7 @@ require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 // Reat Time Chat
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
-http.listen(process.env.PORT || 3000);
-
-
-io.on('connection', function(socket){
-  socket.on('chat message', function(msg){
-    io.emit('chat message', msg);
-  });
-});
-
+server.listen(3300)
 const users = {}
 
 io.on('connection', socket => {
@@ -52,7 +47,6 @@ io.on('connection', socket => {
     delete users[socket.id]
   })
 })
-
 
 
 /* route to handle login and registration */
