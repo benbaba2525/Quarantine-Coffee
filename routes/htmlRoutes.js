@@ -18,9 +18,6 @@ module.exports = function(app) {
 app.get("/chat", (req, res) => {
   res.render("chat",{rooms: rooms})
 });
-app.get('/chat2', function(req, res){
-  res.render("chat2")
-});
 //Load register page
 app.get("/register", function (req, res) {  
   res.render("register")
