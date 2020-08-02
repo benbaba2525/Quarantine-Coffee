@@ -9,7 +9,7 @@ var app = express();
 var PORT = process.env.PORT || 5000;
 //--- Real time chat -------
 const server = require("http").Server(app);
-const io = require('socket.io')(server);
+const io = require('socket.io')(3300);
 
 
 // Middleware
@@ -30,8 +30,7 @@ app.set("view engine", "handlebars");
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
-// Reat Time Chat
-server.listen(3300)
+
 const users = {}
 
 io.on('connection', socket => {
