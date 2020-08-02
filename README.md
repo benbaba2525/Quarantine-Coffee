@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> e2067c51b07338b863621589a295575003a97a7b
 # Quarantine-Coffee
 Welcome to Quarantine Cofffee! We're pleased to announce a new platform for a Virtual Coffee Shop!
 What is a virtual coffee shop? With coffee shops and gathering places closing across the country, now more than ever we miss social interaction. The chance to be in a cozy and warm environment shared by others, chat with friends and strangers alike, to chat about which type of book is best. Our Quarantine Coffee team aims to create a space just like this, a space that you can chat, read, and connect, all without stepping outside your door. Bring your own coffee, pull up a chair and join a table. Have a chat, meet new people, invite your friends to join you, or just listen to others chat while you work.
@@ -47,8 +44,5 @@ Click <a href="https://quarantine-coffee.herokuapp.com/">here</a> to start!
 
 4. Navigate to localhost:5000 in the browser
 
-<<<<<<< HEAD
 5. Enjoy!
-=======
-5. Enjoy!
->>>>>>> e2067c51b07338b863621589a295575003a97a7b
+
